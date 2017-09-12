@@ -68,3 +68,27 @@ var random_array = function( size ){
 	return rand_ary
 }
 //console.log(random_array(50))
+
+// Write a function that returns an aray of all numbers 0.5 and above. use filter, map, or reduce.
+var num_search = function(){
+	let num_arry = random_array(100)
+	return num_arry.filter(function( number ){
+		if( number >= 0.5 ){
+			return number
+		}
+	})
+}
+
+//console.log(num_search())
+
+// Write a function that returns an array of all numbers below 0.5. Use filter, map, or reduce.
+var num_below = function(){
+	let num_arry = random_array(100)
+	return num_arry.filter(function( number ){
+		if( number < 0.5){
+			return number
+		}
+	})
+}
+
+//console.log(num_below())
