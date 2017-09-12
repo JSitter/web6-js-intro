@@ -92,3 +92,14 @@ var num_below = function(){
 }
 
 //console.log(num_below())
+
+// Write a function that returns the total of all random numbers. Use filter, map, or reduce.
+var sum_random = function(){
+	let num_ary = random_array(3)
+
+	return num_ary.reduce(function(acc, curr){
+		return acc + curr
+	})
+}
+
+console.log(sum_random())
