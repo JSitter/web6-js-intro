@@ -95,11 +95,25 @@ var num_below = function(){
 
 // Write a function that returns the total of all random numbers. Use filter, map, or reduce.
 var sum_random = function(){
-	let num_ary = random_array(3)
+	let num_ary = random_array(100)
 
 	return num_ary.reduce(function(acc, curr){
 		return acc + curr
 	})
 }
 
-console.log(sum_random())
+//console.log(sum_random())
+
+// Write a function that returns the average of all of the random numbers. Use filter, map, or reduce.
+
+var avg_random = function(){
+
+	let num_ary = random_array(3)
+
+	let total = num_ary.reduce(function(accumulator, value ){
+		return accumulator + value
+	})
+	return total / num_ary.length
+}
+
+//console.log(avg_random())
