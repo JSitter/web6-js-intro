@@ -38,4 +38,9 @@ var title_search = function( title ){
 	})
 }
 
-console.log(title_search("Author"))
+var job_cat = function(){
+	return nameTitle.map(function( person ){
+		return person.name + " " + person.title
+	})
+}
+console.log(job_cat())
