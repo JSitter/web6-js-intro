@@ -14,12 +14,13 @@ nameTitle.push(fun_object("Edgar Poe", "Author"))
 nameTitle.push(fun_object("Santa Claus", "Gift Giver"))
 nameTitle.push(fun_object("Vicente Fox", "El Presidente"))
 nameTitle.push(fun_object("Georgette Deveroux", "Nuclear Physicist"))
+nameTitle.push(fun_object("Joan Dideon", "Author"))
 
 
 // Write a function that takes a letter (a, b, c, etc) and returns an array containg all of the
 // names from nameTitle that begin with that letter. Use array.filter.
 var letter_function = function( letter ){
-	let person_arry = []
+
 	return nameTitle.filter(function(person){
 		if(person.name[0] == letter){
 			return person
@@ -27,5 +28,14 @@ var letter_function = function( letter ){
 
 	})
 }
+// Write a function takes a title, and returns an array of all objects that have a matching title.
+// Use filter again.
+var title_search = function( title ){
+	return nameTitle.filter( function( person ){
+		if( person.title == title ){
+			return person
+		}
+	})
+}
 
-console.log(letter_function("S"))
+console.log(title_search("Author"))
