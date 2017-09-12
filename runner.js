@@ -1,3 +1,13 @@
+/*
+
+Challenges (finally!)
+
+Try the following challenges to test your knowledge of the JS concepts covered above.
+
+*/
+
+// Create a function that takes a name and title and returns an object containing these two properties
+// The object should look something like: {name: "Rudolf", title: "leader of the pack"}
 var fun_object = function( name, title ){
 	return_obj = {
 		name: name,
@@ -38,9 +48,23 @@ var title_search = function( title ){
 	})
 }
 
+// Write a function that returns an array containing strings made from the names and titles.
+// Each string should look like: "Name Title" or "Diana the duchess of york" or something similar.
+// Use array.map().
 var job_cat = function(){
 	return nameTitle.map(function( person ){
 		return person.name + " " + person.title
 	})
 }
-console.log(job_cat())
+//console.log(job_cat())
+
+// Create an array of random numbers. Bonus: Use a loop and add 100 random numbers or write a function to return an array of any number of random numbers.
+var random_array = function( size ){
+	rand_ary = []
+
+	for( i = 0; i < size; i++){
+		rand_ary.push(Math.random())
+	}
+	return rand_ary
+}
+//console.log(random_array(50))
